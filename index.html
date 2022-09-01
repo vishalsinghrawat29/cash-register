@@ -11,38 +11,54 @@
     <div class="container">
         <h1 class="heading">💵 Cash Register Manager</h1>
         <p class="description">Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
-        <label for="bill-Amount">Bill Amount:</label>
-        <input id="bill-Amount" type="text" />
-        <button id="next-button">Next</button>
-        <label for="cash-Given" id="cash-Given-label">Cash Given:</label>
-        <input id="cash-Given" type="text" />
-        <button id="check-button">Check</button>
+        <section>
+            <label for="bill-Amount">Bill Amount:</label>
+            <input id="bill-Amount" type="text" />
+            <button id="next-button">Next</button>
+        </section>
+        <section class="section-cash-given">
+            <label for="cash-Given" id="cash-Given-label">Cash Given:</label>
+            <input id="cash-Given" type="text" />
+            <button id="check-button">Check</button>
+        </section>
+        
         <p id="error-message"></p>
-        <table class="change-Table">
-            <caption>Return Change</caption>
-            <tr>
-                <th>Number of Notes</th>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-            </tr>
-            <tr>
-                <th>Note</th>
-                <td>2000</td>
-                <td>500</td>
-                <td>100</td>
-                <td>20</td>
-                <td>10</td>
-                <td>5</td>
-                <td>1</td>
-            </tr>
-        </table>
 
+        <section class="output-section" id="output">
+            <table class="change-Table">
+                <caption>Return Change</caption>
+                <tr>
+                    <th>Number of Notes</th>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                </tr>
+                <tr>
+                    <th>Note</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+    <div class="footer">
+        <h4>Designed by <a href="https://vishalsinghrawat.netlify.app/">Vishal Singh Rawat</a></h4>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline"><a class="link" href="https://github.com/vishalsinghrawat29">Github</a></li>|
+            <li class="list-item-inline"><a class="link" href="https://twitter.com/vsrawat2906">Twitter </a></li>|
+            <li class="list-item-inline"><a class="link" href="https://www.linkedin.com/in/vishalsinghrawat/">Linkdin</a></li>
+        </ul>
     </div>
 </body>
 <script src="script.js"></script>
+
 </html>
