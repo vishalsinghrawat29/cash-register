@@ -14,12 +14,17 @@ nextButton.addEventListener("click", function showCashGivenField(){
 checkButton.addEventListener("click", function validateBillAndCashAmount(){
     hideMessage();
     if(Number(billAmount.value) > 0){
-        if(Number(cashGiven.value) >= Number(billAmount.value)){
+        if(Number(cashGiven.value) > Number(billAmount.value)){
             const amountToBeReturned  = cashGiven.value - billAmount.value;
             outputSection.style.display = 'block'
             calculateChange(amountToBeReturned);
-        }else{
+        }else if (Number(cashGiven.value) === Number(billAmount.value)){
+            showMessage("No need to exchange");
+            outputSection.style.display = 'none'
+        }
+        else{
             showMessage("The cash provided should at least be equal to the bill amount");
+            outputSection.style.display = 'none'
         }
     }else{
         showMessage("Invalid Bill Amount");   
